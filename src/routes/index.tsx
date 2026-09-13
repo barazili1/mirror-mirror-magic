@@ -175,9 +175,9 @@ function Index() {
   return (
     <main
       dir="rtl"
-      className="mx-auto flex h-dvh max-w-[430px] flex-col overflow-hidden bg-background pb-[66px] text-foreground shadow-2xl"
+      className="mx-auto min-h-dvh max-w-[430px] overflow-x-hidden bg-background pb-[66px] text-foreground shadow-2xl"
     >
-      <section className="wallet-backdrop relative h-[310px] shrink-0 px-[22px] pt-[12px] text-primary-foreground">
+      <section className="wallet-backdrop relative h-[310px] px-[22px] pt-[12px] text-primary-foreground">
         <div className="flex items-center justify-between">
           <div className="flex h-[40px] items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 text-[17px] font-bold">
             <ChevronLeft size={27} strokeWidth={3} />
@@ -269,7 +269,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="relative -mt-[8px] flex-1 overflow-y-auto rounded-t-[22px] bg-background px-[11px] pt-[8px] pb-4">
+      <section className="relative -mt-[8px] rounded-t-[22px] bg-background px-[11px] pt-[8px] pb-4">
         <div className="rounded-[12px] bg-panel px-3 py-2">
           <div className="mb-1.5 flex items-center justify-between">
             <h1 className="text-[16px] font-extrabold">خدمات كاش</h1>
