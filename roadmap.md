@@ -6,4 +6,4 @@
 - [x] Settings cards height 40px
 - [x] Expenses card amount styling
 - [x] Replace loading icon
-- [ ] Enlarge four service icons (تحويل الأموال, إيداع الأموال, عمليات ATM, خدمات الاتصالات)
+- [x] Enlarge four service icons
