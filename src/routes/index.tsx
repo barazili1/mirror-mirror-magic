@@ -347,7 +347,7 @@ function Index() {
               />
             </svg>
             <p className="absolute bottom-2 right-3 flex items-baseline gap-1 text-[15px]" dir="rtl">
-              <span className="text-[28px] font-normal leading-none">٧٣١٤٫٧٠</span>
+              <span className="text-[34px] font-normal leading-none">٧٣١٤٫٧٠</span>
               <span>جنيه</span>
             </p>
           </div>
