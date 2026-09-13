@@ -105,15 +105,7 @@ function ConfirmPage() {
 
         {/* Greeting card */}
         <div className="mt-3 flex items-center justify-between rounded-[18px] bg-white px-4 py-2.5">
-          <img
-            src="/images/greeting-stamps.png"
-            alt="كروت معايدة"
-            width={180}
-            height={73}
-            className="h-[52px] w-auto object-contain"
-          />
           <div className="flex items-center gap-3">
-            <span className="text-[16px]">اضف كارت معايدة؟</span>
             <button
               type="button"
               role="switch"
