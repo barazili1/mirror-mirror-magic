@@ -69,8 +69,8 @@ function ConfirmPage() {
               className="h-[46px] w-auto object-contain"
             />
             <div className="text-right">
-              <p className="text-[14px] text-foreground/45">من</p>
-              <p className="mt-1 text-[20px] font-bold tracking-wide" dir="ltr">01087163221</p>
+              <p className="text-[13px] text-foreground/45">من</p>
+              <p className="mt-1 text-[18px] font-bold tracking-wide" dir="ltr">01087163221</p>
             </div>
           </div>
           <div className="relative h-px bg-foreground/10" />
@@ -83,9 +83,9 @@ function ConfirmPage() {
               className="h-[46px] w-auto object-contain"
             />
             <div className="text-right">
-              <p className="text-[14px] text-foreground/45">إلى</p>
-              <p className="mt-1 text-right text-[20px] font-bold tracking-wide" dir="ltr">{phone || "01087163221"}</p>
-              <p className="mt-1 text-left text-[15px] text-foreground/60" dir="ltr">{senderName}</p>
+              <p className="text-[13px] text-foreground/45">إلى</p>
+              <p className="mt-1 text-right text-[18px] font-bold tracking-wide" dir="ltr">{phone || "01087163221"}</p>
+              <p className="mt-1 text-left text-[14px] text-foreground/60" dir="ltr">{senderName}</p>
             </div>
           </div>
         </div>
