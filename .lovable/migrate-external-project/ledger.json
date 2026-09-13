@@ -1,0 +1,6 @@
+[
+  {"capability":"code (routes, components, assets, styles)","source":"github repo barazili1/magic-mirror-reflector","outcome":"copied in place","status":"verified","next_action":"none"},
+  {"capability":"schema/records","source":"none detected","outcome":"no database in source","status":"not applicable","next_action":"none"},
+  {"capability":"auth","source":"none detected","outcome":"no auth in source","status":"not applicable","next_action":"none"},
+  {"capability":"external providers/public endpoints/secrets","source":"none detected","outcome":"nothing to preserve","status":"not applicable","next_action":"none"}
+]
