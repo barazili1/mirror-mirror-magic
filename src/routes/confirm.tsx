@@ -61,26 +61,20 @@ function ConfirmPage() {
             className="pointer-events-none absolute left-1/2 top-1/2 h-[220px] w-auto -translate-x-1/2 -translate-y-1/2 object-contain opacity-[0.08]"
           />
           <div className="relative flex items-center justify-end gap-3 py-2.5">
+            <img
+              src={vodafoneCashLogo.url}
+              alt="فودافون كاش"
+              width={46}
+              height={56}
+              className="h-[46px] w-auto object-contain"
+            />
             <div className="text-right">
               <p className="text-[14px] text-foreground/45">من</p>
               <p className="mt-1 text-[20px] font-bold tracking-wide" dir="ltr">01087163221</p>
             </div>
-            <img
-              src={vodafoneCashLogo.url}
-              alt="فودافون كاش"
-              width={46}
-              height={56}
-              className="h-[46px] w-auto object-contain"
-            />
           </div>
           <div className="relative h-px bg-foreground/10" />
           <div className="relative flex items-center justify-end gap-3 py-2.5">
-            <div className="text-right">
-              <p className="text-[14px] text-foreground/45">إلى</p>
-              <p className="mt-1 text-[20px] font-bold tracking-wide" dir="ltr">{phone || "01087163221"}</p>
-              <p className="mt-1 text-[15px] text-foreground/60" dir="ltr">{senderName}</p>
-              <p className="mt-0.5 text-[15px] text-foreground/60" dir="ltr">Me</p>
-            </div>
             <img
               src={vodafoneCashLogo.url}
               alt="فودافون كاش"
@@ -88,6 +82,12 @@ function ConfirmPage() {
               height={56}
               className="h-[46px] w-auto object-contain"
             />
+            <div className="text-right">
+              <p className="text-[14px] text-foreground/45">إلى</p>
+              <p className="mt-1 text-right text-[20px] font-bold tracking-wide" dir="ltr">{phone || "01087163221"}</p>
+              <p className="mt-1 text-left text-[15px] text-foreground/60" dir="ltr">{senderName}</p>
+              <p className="mt-0.5 text-left text-[15px] text-foreground/60" dir="ltr">Me</p>
+            </div>
           </div>
         </div>
 
