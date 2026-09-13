@@ -10,6 +10,7 @@ import gasIcon from "@/assets/icon-gas.asset.json";
 import offerBanner from "@/assets/offer-banner.jpg";
 import prosecutionIcon from "@/assets/icon-prosecution.asset.json";
 import vodafoneCashLogo from "@/assets/cash-logo.asset.json";
+import loadingLogo from "@/assets/vodafone-loading-logo.png.asset.json";
 
 // No head() here: the home route inherits title/description/og/twitter from
 // __root.tsx, and ships no og:image so serve-time hosting can inject the
