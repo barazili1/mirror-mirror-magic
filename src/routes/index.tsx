@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { Bell, ChevronLeft, Delete, Eye, EyeOff, Gift, Send, Smartphone, X } from "lucide-react";
+import { ArrowUpRight, Bell, ChevronLeft, CreditCard, Delete, Eye, EyeOff, Fingerprint, Gift, HelpCircle, Lock, Send, Store, X } from "lucide-react";
 import { type SVGProps, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -365,6 +365,83 @@ function Index() {
             </p>
           </button>
         </div>
+
+        <div className="mt-[7px] rounded-[12px] bg-panel p-3">
+          <div className="mb-2 flex items-center justify-between">
+            <h2 className="text-[15px] font-extrabold">آخر المعاملات</h2>
+            <Button
+              variant="ghost"
+              className="h-auto rounded-full bg-muted px-3 py-0.5 text-[12px]"
+            >
+              عرض الكل
+            </Button>
+          </div>
+          <div className="flex flex-col gap-3" dir="rtl">
+            {[
+              {
+                title: "تحويل للتخزين",
+                date: "13 سبتمبر 2026 - 05:30 م",
+                amount: "10",
+                icon: ArrowUpRight,
+                color: "bg-[#8b5a2b]",
+              },
+              {
+                title: "شحن الرصيد",
+                date: "13 سبتمبر 2026 - 01:55 م",
+                amount: "5",
+                icon: CreditCard,
+                color: "bg-[#d93025]",
+              },
+              {
+                title: "مدفوعات المحفظة",
+                date: "12 سبتمبر 2026 - 07:51 م",
+                amount: "46.50",
+                icon: Fingerprint,
+                color: "bg-[#f9ab00]",
+              },
+            ].map((tx) => (
+              <div key={tx.title} className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div
+                    className={`grid size-11 shrink-0 place-items-center rounded-[12px] text-white ${tx.color}`}
+                  >
+                    <tx.icon size={22} />
+                  </div>
+                  <div>
+                    <p className="text-[14px] font-extrabold">{tx.title}</p>
+                    <p className="text-[11px] text-foreground/60">{tx.date}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1 text-[15px] font-bold text-alert">
+                  <ChevronLeft size={16} />
+                  <span>{tx.amount} جنيه</span>
+                  <span>-</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-[7px] rounded-[12px] bg-panel p-3">
+          <h2 className="mb-2 text-[15px] font-extrabold">الإعدادات</h2>
+          <div className="grid grid-cols-2 gap-2" dir="rtl">
+            {[
+              { label: "إنشاء الرقم السري", icon: Lock },
+              { label: "تغيير الرقم السري", icon: Lock },
+              { label: "المساعدة", icon: HelpCircle },
+              { label: "الفروع", icon: Store },
+            ].map((item) => (
+              <button
+                key={item.label}
+                type="button"
+                className="flex h-[70px] items-center justify-center gap-2 rounded-[12px] bg-background p-2 text-center"
+              >
+                <span className="text-[13px] font-bold">{item.label}</span>
+                <item.icon size={20} className="text-foreground/70" />
+              </button>
+            ))}
+          </div>
+        </div>
       </section>
 
       {toastVisible && (
@@ -408,17 +485,23 @@ function Index() {
         className="fixed bottom-0 left-1/2 z-20 flex h-[66px] w-full max-w-[430px] -translate-x-1/2 items-center justify-around bg-panel px-3 shadow-[0_-4px_18px_color-mix(in_oklab,var(--foreground)_8%,transparent)]"
         aria-label="التنقل الرئيسي"
       >
-        <Button variant="nav" size="nav" className="bg-muted text-alert">
-          <Smartphone size={24} />
-          <span className="mt-1 text-[11px] font-bold">المحفظة</span>
+        <Button variant="nav" size="nav">
+          <ServicesIcon className="size-7" />
+          <span className="mt-1 text-[11px]">الخدمات</span>
         </Button>
         <Button variant="nav" size="nav" onClick={goToTransfer}>
           <TransferIcon className="size-7" />
           <span className="mt-1 text-[11px]">تحويل أموال</span>
         </Button>
-        <Button variant="nav" size="nav">
-          <ServicesIcon className="size-7" />
-          <span className="mt-1 text-[11px]">الخدمات</span>
+        <Button variant="nav" size="nav" className="bg-muted text-alert">
+          <img
+            src={vodafoneCashLogo.url}
+            alt="المحفظة"
+            width={90}
+            height={110}
+            className="h-6 w-auto object-contain"
+          />
+          <span className="mt-1 text-[11px] font-bold">المحفظة</span>
         </Button>
       </nav>
     </main>
