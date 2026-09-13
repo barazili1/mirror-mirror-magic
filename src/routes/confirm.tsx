@@ -86,7 +86,6 @@ function ConfirmPage() {
               <p className="text-[14px] text-foreground/45">إلى</p>
               <p className="mt-1 text-right text-[20px] font-bold tracking-wide" dir="ltr">{phone || "01087163221"}</p>
               <p className="mt-1 text-left text-[15px] text-foreground/60" dir="ltr">{senderName}</p>
-              <p className="mt-0.5 text-left text-[15px] text-foreground/60" dir="ltr">Me</p>
             </div>
           </div>
         </div>
