@@ -47,8 +47,8 @@ function ConfirmPage() {
       <div className="flex min-h-0 flex-1 flex-col px-4">
         {/* Amount */}
         <div className="mt-3 flex items-baseline justify-center gap-2">
-          <span className="text-[34px] font-bold leading-none">جنيه</span>
           <span className="text-[48px] font-bold leading-none text-[#2e8b9a]">{amount}</span>
+          <span className="text-[34px] font-bold leading-none">جنيه</span>
         </div>
         <p className="mt-1 text-center text-[16px] text-foreground/45">مبلغ التحويل</p>
 
@@ -60,26 +60,21 @@ function ConfirmPage() {
             aria-hidden="true"
             className="pointer-events-none absolute left-1/2 top-1/2 h-[220px] w-auto -translate-x-1/2 -translate-y-1/2 object-contain opacity-[0.08]"
           />
-          <div className="relative flex items-center justify-between py-2.5">
+          <div className="relative flex items-center justify-start gap-3 py-2.5">
+            <img
+              src={vodafoneCashLogo.url}
+              alt="فودافون كاش"
+              width={46}
+              height={56}
+              className="h-[46px] w-auto object-contain"
+            />
             <div className="text-right">
               <p className="text-[14px] text-foreground/45">من</p>
               <p className="mt-1 text-[20px] font-bold tracking-wide" dir="ltr">01087163221</p>
             </div>
-            <img
-              src={vodafoneCashLogo.url}
-              alt="فودافون كاش"
-              width={46}
-              height={56}
-              className="h-[46px] w-auto object-contain"
-            />
           </div>
           <div className="relative h-px bg-foreground/10" />
-          <div className="relative flex items-center justify-between py-2.5">
-            <div className="text-right">
-              <p className="text-[14px] text-foreground/45">إلى</p>
-              <p className="mt-1 text-[20px] font-bold tracking-wide" dir="ltr">{phone || "01087163221"}</p>
-              <p className="mt-1 text-[15px] text-foreground/60" dir="ltr">{senderName}</p>
-            </div>
+          <div className="relative flex items-center justify-start gap-3 py-2.5">
             <img
               src={vodafoneCashLogo.url}
               alt="فودافون كاش"
@@ -87,6 +82,12 @@ function ConfirmPage() {
               height={56}
               className="h-[46px] w-auto object-contain"
             />
+            <div className="text-right">
+              <p className="text-[14px] text-foreground/45">إلى</p>
+              <p className="mt-1 text-right text-[20px] font-bold tracking-wide" dir="ltr">{phone || "01087163221"}</p>
+              <p className="mt-1 text-left text-[15px] text-foreground/60" dir="ltr">{senderName}</p>
+              <p className="mt-0.5 text-left text-[15px] text-foreground/60" dir="ltr">Me</p>
+            </div>
           </div>
         </div>
 
@@ -104,15 +105,7 @@ function ConfirmPage() {
 
         {/* Greeting card */}
         <div className="mt-3 flex items-center justify-between rounded-[18px] bg-white px-4 py-2.5">
-          <img
-            src="/images/greeting-stamps.png"
-            alt="كروت معايدة"
-            width={180}
-            height={73}
-            className="h-[52px] w-auto object-contain"
-          />
           <div className="flex items-center gap-3">
-            <span className="text-[16px]">اضف كارت معايدة؟</span>
             <button
               type="button"
               role="switch"
@@ -122,10 +115,18 @@ function ConfirmPage() {
               className={`relative h-[30px] w-[52px] rounded-full transition-colors ${greeting ? "bg-[#e60000]" : "bg-[#c7c7cc]"}`}
             >
               <span
-                className={`absolute top-[3px] size-[24px] rounded-full bg-white shadow transition-all ${greeting ? "right-[25px]" : "right-[3px]"}`}
+                className={`absolute top-[3px] size-[24px] rounded-full bg-white shadow transition-all ${greeting ? "left-[25px]" : "left-[3px]"}`}
               />
             </button>
+            <span className="text-[16px]">اضف كارت معايدة؟</span>
           </div>
+          <img
+            src="/images/greeting-stamps.png"
+            alt="كروت معايدة"
+            width={180}
+            height={73}
+            className="h-[52px] w-auto object-contain"
+          />
         </div>
 
         <p className="mt-2 text-[13px] text-foreground/45">* لمستخدمين فودافون كاش فقط</p>
