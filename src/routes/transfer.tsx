@@ -1,6 +1,7 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { ChevronRight, Star, X } from "lucide-react";
 import { useState, type SVGProps } from "react";
+import loadingLogo from "@/assets/vodafone-loading-logo.png.asset.json";
 
 export const Route = createFileRoute("/transfer")({
   head: () => ({
@@ -225,7 +226,7 @@ function TransferPage() {
       {confirmLoading && (
         <div className="fixed inset-0 z-40 mx-auto flex max-w-[430px] flex-col items-center justify-center bg-[#7a7a7a]/90">
           <img
-            src="/images/vodafone-loading-logo.jpg"
+            src={loadingLogo.url}
             alt="جاري التحميل"
             width={80}
             height={80}

@@ -10,6 +10,7 @@ import gasIcon from "@/assets/icon-gas.asset.json";
 import offerBanner from "@/assets/offer-banner.jpg";
 import prosecutionIcon from "@/assets/icon-prosecution.asset.json";
 import vodafoneCashLogo from "@/assets/cash-logo.asset.json";
+import loadingLogo from "@/assets/vodafone-loading-logo.png.asset.json";
 
 // No head() here: the home route inherits title/description/og/twitter from
 // __root.tsx, and ships no og:image so serve-time hosting can inject the
@@ -254,16 +255,16 @@ function Index() {
 
         <div className="mt-[11px] flex justify-center gap-2 px-6" dir="rtl">
           {shortcuts.map(({ label, icon: Icon }, index) => (
-            <div key={index} className="flex w-[72px] flex-col items-center text-center">
+            <div key={index} className="flex w-[80px] flex-col items-center text-center">
               <Button
                 variant="round"
                 size="shortcut"
                 aria-label={typeof label === "string" ? label : "خدمة"}
                 onClick={index === 0 ? goToTransfer : undefined}
               >
-                <Icon className="size-8" />
+                <Icon className="size-10" />
               </Button>
-              <span className="mt-1 text-[11px] leading-[1.05]">{label}</span>
+              <span className="mt-1 text-[12px] leading-[1.05]">{label}</span>
             </div>
           ))}
         </div>
@@ -462,7 +463,7 @@ function Index() {
       {transferLoading && (
         <div className="fixed inset-0 z-40 mx-auto flex max-w-[430px] flex-col items-center justify-center bg-[#7a7a7a]/90">
           <img
-            src="/images/vodafone-loading-logo.jpg"
+            src={loadingLogo.url}
             alt="جاري التحميل"
             width={80}
             height={80}
