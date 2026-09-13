@@ -346,8 +346,9 @@ function Index() {
                 fill="url(#expenseFill)"
               />
             </svg>
-            <p className="absolute bottom-2 right-3 text-[15px]">
-              جنيه <strong className="text-[22px] font-extrabold">٧٣١٤٫٧٠</strong>
+            <p className="absolute bottom-2 right-3 flex items-baseline gap-1 text-[15px]" dir="rtl">
+              <span className="text-[28px] font-normal leading-none">٧٣١٤٫٧٠</span>
+              <span>جنيه</span>
             </p>
           </div>
 
