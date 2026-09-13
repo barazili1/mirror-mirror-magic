@@ -436,10 +436,10 @@ function Index() {
               <button
                 key={item.label}
                 type="button"
-                className="flex h-[82px] items-center justify-center gap-3 rounded-[22px] bg-card p-4 text-center shadow-sm"
+                className="flex h-[92px] items-center justify-center gap-3 rounded-[26px] bg-card p-4 text-center shadow-sm"
               >
-                <span className="text-[17px] font-bold">{item.label}</span>
-                <item.icon size={30} className="text-foreground/80" />
+                <span className="text-[18px] font-medium">{item.label}</span>
+                <item.icon size={26} className="text-foreground/80" />
               </button>
             ))}
           </div>
