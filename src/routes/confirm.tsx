@@ -115,7 +115,7 @@ function ConfirmPage() {
               className={`relative h-[30px] w-[52px] rounded-full transition-colors ${greeting ? "bg-[#e60000]" : "bg-[#c7c7cc]"}`}
             >
               <span
-                className={`absolute top-[3px] size-[24px] rounded-full bg-white shadow transition-all ${greeting ? "left-[3px]" : "left-[25px]"}`}
+                className={`absolute top-[3px] size-[24px] rounded-full bg-white shadow transition-all ${greeting ? "left-[25px]" : "left-[3px]"}`}
               />
             </button>
             <span className="text-[16px]">اضف كارت معايدة؟</span>
