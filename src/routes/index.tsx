@@ -365,6 +365,83 @@ function Index() {
             </p>
           </button>
         </div>
+
+        <div className="mt-[7px] rounded-[12px] bg-panel p-3">
+          <div className="mb-2 flex items-center justify-between">
+            <h2 className="text-[15px] font-extrabold">آخر المعاملات</h2>
+            <Button
+              variant="ghost"
+              className="h-auto rounded-full bg-muted px-3 py-0.5 text-[12px]"
+            >
+              عرض الكل
+            </Button>
+          </div>
+          <div className="flex flex-col gap-3" dir="rtl">
+            {[
+              {
+                title: "تحويل للتخزين",
+                date: "13 سبتمبر 2026 - 05:30 م",
+                amount: "10",
+                icon: ArrowUpRight,
+                color: "bg-[#8b5a2b]",
+              },
+              {
+                title: "شحن الرصيد",
+                date: "13 سبتمبر 2026 - 01:55 م",
+                amount: "5",
+                icon: CreditCard,
+                color: "bg-[#d93025]",
+              },
+              {
+                title: "مدفوعات المحفظة",
+                date: "12 سبتمبر 2026 - 07:51 م",
+                amount: "46.50",
+                icon: Fingerprint,
+                color: "bg-[#f9ab00]",
+              },
+            ].map((tx) => (
+              <div key={tx.title} className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div
+                    className={`grid size-11 shrink-0 place-items-center rounded-[12px] text-white ${tx.color}`}
+                  >
+                    <tx.icon size={22} />
+                  </div>
+                  <div>
+                    <p className="text-[14px] font-extrabold">{tx.title}</p>
+                    <p className="text-[11px] text-foreground/60">{tx.date}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1 text-[15px] font-bold text-alert">
+                  <ChevronLeft size={16} />
+                  <span>{tx.amount} جنيه</span>
+                  <span>-</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-[7px] rounded-[12px] bg-panel p-3">
+          <h2 className="mb-2 text-[15px] font-extrabold">الإعدادات</h2>
+          <div className="grid grid-cols-2 gap-2" dir="rtl">
+            {[
+              { label: "إنشاء الرقم السري", icon: Lock },
+              { label: "تغيير الرقم السري", icon: Lock },
+              { label: "المساعدة", icon: HelpCircle },
+              { label: "الفروع", icon: Store },
+            ].map((item) => (
+              <button
+                key={item.label}
+                type="button"
+                className="flex h-[70px] items-center justify-center gap-2 rounded-[12px] bg-background p-2 text-center"
+              >
+                <span className="text-[13px] font-bold">{item.label}</span>
+                <item.icon size={20} className="text-foreground/70" />
+              </button>
+            ))}
+          </div>
+        </div>
       </section>
 
       {toastVisible && (
