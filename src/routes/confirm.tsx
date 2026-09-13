@@ -47,8 +47,8 @@ function ConfirmPage() {
       <div className="flex min-h-0 flex-1 flex-col px-4">
         {/* Amount */}
         <div className="mt-3 flex items-baseline justify-center gap-2">
-          <span className="text-[34px] font-bold leading-none">جنيه</span>
           <span className="text-[48px] font-bold leading-none text-[#2e8b9a]">{amount}</span>
+          <span className="text-[34px] font-bold leading-none">جنيه</span>
         </div>
         <p className="mt-1 text-center text-[16px] text-foreground/45">مبلغ التحويل</p>
 
@@ -60,7 +60,7 @@ function ConfirmPage() {
             aria-hidden="true"
             className="pointer-events-none absolute left-1/2 top-1/2 h-[220px] w-auto -translate-x-1/2 -translate-y-1/2 object-contain opacity-[0.08]"
           />
-          <div className="relative flex items-center justify-between py-2.5">
+          <div className="relative flex items-center justify-end gap-3 py-2.5">
             <div className="text-right">
               <p className="text-[14px] text-foreground/45">من</p>
               <p className="mt-1 text-[20px] font-bold tracking-wide" dir="ltr">01087163221</p>
@@ -74,11 +74,12 @@ function ConfirmPage() {
             />
           </div>
           <div className="relative h-px bg-foreground/10" />
-          <div className="relative flex items-center justify-between py-2.5">
+          <div className="relative flex items-center justify-end gap-3 py-2.5">
             <div className="text-right">
               <p className="text-[14px] text-foreground/45">إلى</p>
               <p className="mt-1 text-[20px] font-bold tracking-wide" dir="ltr">{phone || "01087163221"}</p>
               <p className="mt-1 text-[15px] text-foreground/60" dir="ltr">{senderName}</p>
+              <p className="mt-0.5 text-[15px] text-foreground/60" dir="ltr">Me</p>
             </div>
             <img
               src={vodafoneCashLogo.url}
