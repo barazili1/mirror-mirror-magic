@@ -175,9 +175,9 @@ function Index() {
   return (
     <main
       dir="rtl"
-      className="mx-auto flex h-dvh max-w-[430px] flex-col overflow-hidden bg-background pb-[66px] text-foreground shadow-2xl"
+      className="mx-auto min-h-dvh max-w-[430px] overflow-x-hidden bg-background pb-[66px] text-foreground shadow-2xl"
     >
-      <section className="wallet-backdrop relative h-[310px] shrink-0 px-[22px] pt-[12px] text-primary-foreground">
+      <section className="wallet-backdrop relative h-[310px] px-[22px] pt-[12px] text-primary-foreground">
         <div className="flex items-center justify-between">
           <div className="flex h-[40px] items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 text-[17px] font-bold">
             <ChevronLeft size={27} strokeWidth={3} />
