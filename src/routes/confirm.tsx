@@ -60,7 +60,7 @@ function ConfirmPage() {
             aria-hidden="true"
             className="pointer-events-none absolute left-1/2 top-1/2 h-[220px] w-auto -translate-x-1/2 -translate-y-1/2 object-contain opacity-[0.08]"
           />
-          <div className="relative flex items-center justify-end gap-3 py-2.5">
+          <div className="relative flex items-center justify-start gap-3 py-2.5">
             <img
               src={vodafoneCashLogo.url}
               alt="فودافون كاش"
@@ -74,7 +74,7 @@ function ConfirmPage() {
             </div>
           </div>
           <div className="relative h-px bg-foreground/10" />
-          <div className="relative flex items-center justify-end gap-3 py-2.5">
+          <div className="relative flex items-center justify-start gap-3 py-2.5">
             <img
               src={vodafoneCashLogo.url}
               alt="فودافون كاش"
