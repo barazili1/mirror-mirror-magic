@@ -118,7 +118,15 @@ function ConfirmPage() {
                 className={`absolute top-[3px] size-[24px] rounded-full bg-white shadow transition-all ${greeting ? "right-[25px]" : "right-[3px]"}`}
               />
             </button>
+            <span className="text-[16px]">اضف كارت معايدة؟</span>
           </div>
+          <img
+            src="/images/greeting-stamps.png"
+            alt="كروت معايدة"
+            width={180}
+            height={73}
+            className="h-[52px] w-auto object-contain"
+          />
         </div>
 
         <p className="mt-2 text-[13px] text-foreground/45">* لمستخدمين فودافون كاش فقط</p>
