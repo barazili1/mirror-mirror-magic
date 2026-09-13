@@ -422,9 +422,9 @@ function Index() {
           </div>
         </div>
 
-        <div className="mt-[7px] rounded-[12px] bg-panel p-3">
-          <h2 className="mb-2 text-[15px] font-extrabold">الإعدادات</h2>
-          <div className="grid grid-cols-2 gap-2" dir="rtl">
+        <div className="mt-[7px] rounded-[16px] bg-panel p-3">
+          <h2 className="mb-3 text-[15px] font-extrabold">الإعدادات</h2>
+          <div className="grid grid-cols-2 gap-2.5" dir="rtl">
             {[
               { label: "إنشاء الرقم السري", icon: Lock },
               { label: "تغيير الرقم السري", icon: Lock },
@@ -434,10 +434,10 @@ function Index() {
               <button
                 key={item.label}
                 type="button"
-                className="flex h-[70px] items-center justify-center gap-2 rounded-[12px] bg-background p-2 text-center"
+                className="flex h-[84px] items-center justify-center gap-2.5 rounded-[20px] bg-card p-3 text-center shadow-sm"
               >
-                <span className="text-[13px] font-bold">{item.label}</span>
-                <item.icon size={20} className="text-foreground/70" />
+                <span className="text-[15px] font-bold">{item.label}</span>
+                <item.icon size={24} className="text-foreground/70" />
               </button>
             ))}
           </div>
