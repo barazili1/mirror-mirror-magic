@@ -47,10 +47,10 @@ function ConfirmPage() {
       <div className="flex min-h-0 flex-1 flex-col px-4">
         {/* Amount */}
         <div className="mt-3 flex items-baseline justify-center gap-2">
-          <span className="text-[48px] font-bold leading-none text-[#2e8b9a]">{amount}</span>
-          <span className="text-[34px] font-bold leading-none">جنيه</span>
+          <span className="text-[40px] font-bold leading-none text-[#2e8b9a]">{amount}</span>
+          <span className="text-[28px] font-bold leading-none">جنيه</span>
         </div>
-        <p className="mt-1 text-center text-[16px] text-foreground/45">مبلغ التحويل</p>
+        <p className="mt-1 text-center text-[14px] text-foreground/45">مبلغ التحويل</p>
 
         {/* From / To card */}
         <div className="relative mt-4 overflow-hidden rounded-[18px] bg-white px-4">
