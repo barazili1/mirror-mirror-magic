@@ -47,10 +47,10 @@ function ConfirmPage() {
       <div className="flex min-h-0 flex-1 flex-col px-4">
         {/* Amount */}
         <div className="mt-3 flex items-baseline justify-center gap-2">
-          <span className="text-[48px] font-bold leading-none text-[#2e8b9a]">{amount}</span>
-          <span className="text-[34px] font-bold leading-none">جنيه</span>
+          <span className="text-[40px] font-bold leading-none text-[#2e8b9a]">{amount}</span>
+          <span className="text-[28px] font-bold leading-none">جنيه</span>
         </div>
-        <p className="mt-1 text-center text-[16px] text-foreground/45">مبلغ التحويل</p>
+        <p className="mt-1 text-center text-[14px] text-foreground/45">مبلغ التحويل</p>
 
         {/* From / To card */}
         <div className="relative mt-4 overflow-hidden rounded-[18px] bg-white px-4">
@@ -69,8 +69,8 @@ function ConfirmPage() {
               className="h-[46px] w-auto object-contain"
             />
             <div className="text-right">
-              <p className="text-[14px] text-foreground/45">من</p>
-              <p className="mt-1 text-[20px] font-bold tracking-wide" dir="ltr">01087163221</p>
+              <p className="text-[13px] text-foreground/45">من</p>
+              <p className="mt-1 text-[18px] font-bold tracking-wide" dir="ltr">01087163221</p>
             </div>
           </div>
           <div className="relative h-px bg-foreground/10" />
@@ -83,9 +83,9 @@ function ConfirmPage() {
               className="h-[46px] w-auto object-contain"
             />
             <div className="text-right">
-              <p className="text-[14px] text-foreground/45">إلى</p>
-              <p className="mt-1 text-right text-[20px] font-bold tracking-wide" dir="ltr">{phone || "01087163221"}</p>
-              <p className="mt-1 text-left text-[15px] text-foreground/60" dir="ltr">{senderName}</p>
+              <p className="text-[13px] text-foreground/45">إلى</p>
+              <p className="mt-1 text-right text-[18px] font-bold tracking-wide" dir="ltr">{phone || "01087163221"}</p>
+              <p className="mt-1 text-left text-[14px] text-foreground/60" dir="ltr">{senderName}</p>
             </div>
           </div>
         </div>
@@ -93,12 +93,12 @@ function ConfirmPage() {
         {/* Fees card */}
         <div className="mt-3 rounded-[18px] bg-white px-4">
           <div className="flex items-center justify-between py-2.5">
-            <span className="text-[17px]">الرسوم</span>
-            <span className="text-[17px] font-bold">0.0 جنيه</span>
+            <span className="text-[15px]">الرسوم</span>
+            <span className="text-[15px] font-bold">0.0 جنيه</span>
           </div>
           <div className="flex items-center justify-between pb-2.5">
-            <span className="text-[17px]">المبلغ الكلي المستحق</span>
-            <span className="text-[17px] font-bold">{total} جنيه</span>
+            <span className="text-[15px]">المبلغ الكلي المستحق</span>
+            <span className="text-[15px] font-bold">{total} جنيه</span>
           </div>
         </div>
 
@@ -117,7 +117,7 @@ function ConfirmPage() {
                 className={`absolute top-[3px] size-[24px] rounded-full bg-white shadow transition-all ${greeting ? "left-[25px]" : "left-[3px]"}`}
               />
             </button>
-            <span className="text-[16px]">اضف كارت معايدة؟</span>
+            <span className="text-[15px]">اضف كارت معايدة؟</span>
           </div>
           <img
             src="/images/greeting-stamps.png"
@@ -128,8 +128,8 @@ function ConfirmPage() {
           />
         </div>
 
-        <p className="mt-2 text-[13px] text-foreground/45">* لمستخدمين فودافون كاش فقط</p>
-        <p className="mt-1 text-[13px] leading-relaxed text-foreground/70">
+        <p className="mt-2 text-[12px] text-foreground/45">* لمستخدمين فودافون كاش فقط</p>
+        <p className="mt-1 text-[12px] leading-relaxed text-foreground/70">
           تأكد من ادخال الرقم الصحيح وفي حالة التحويل الخاطئ لن تتمكن من اعادة المبلغ مرة اخرى.
         </p>
         <div className="flex-1" />
@@ -139,7 +139,7 @@ function ConfirmPage() {
       <div className="shrink-0 px-5 pb-3 pt-2">
         <button
           type="button"
-          className="h-[52px] w-full rounded-[14px] bg-[#e60000] text-[18px] font-normal text-white transition-transform active:scale-[0.98]"
+          className="h-[52px] w-full rounded-[14px] bg-[#e60000] text-[16px] font-normal text-white transition-transform active:scale-[0.98]"
         >
           تأكيد
         </button>
