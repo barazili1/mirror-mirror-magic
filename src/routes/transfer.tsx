@@ -226,7 +226,7 @@ function TransferPage() {
       {confirmLoading && (
         <div className="fixed inset-0 z-40 mx-auto flex max-w-[430px] flex-col items-center justify-center bg-[#7a7a7a]/90">
           <img
-            src="/images/vodafone-loading-logo.jpg"
+            src={loadingLogo.url}
             alt="جاري التحميل"
             width={80}
             height={80}
