@@ -255,16 +255,16 @@ function Index() {
 
         <div className="mt-[11px] flex justify-center gap-2 px-6" dir="rtl">
           {shortcuts.map(({ label, icon: Icon }, index) => (
-            <div key={index} className="flex w-[72px] flex-col items-center text-center">
+            <div key={index} className="flex w-[80px] flex-col items-center text-center">
               <Button
                 variant="round"
                 size="shortcut"
                 aria-label={typeof label === "string" ? label : "خدمة"}
                 onClick={index === 0 ? goToTransfer : undefined}
               >
-                <Icon className="size-8" />
+                <Icon className="size-10" />
               </Button>
-              <span className="mt-1 text-[11px] leading-[1.05]">{label}</span>
+              <span className="mt-1 text-[12px] leading-[1.05]">{label}</span>
             </div>
           ))}
         </div>
