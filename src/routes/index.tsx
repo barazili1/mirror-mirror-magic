@@ -485,17 +485,23 @@ function Index() {
         className="fixed bottom-0 left-1/2 z-20 flex h-[66px] w-full max-w-[430px] -translate-x-1/2 items-center justify-around bg-panel px-3 shadow-[0_-4px_18px_color-mix(in_oklab,var(--foreground)_8%,transparent)]"
         aria-label="التنقل الرئيسي"
       >
-        <Button variant="nav" size="nav" className="bg-muted text-alert">
-          <Smartphone size={24} />
-          <span className="mt-1 text-[11px] font-bold">المحفظة</span>
+        <Button variant="nav" size="nav">
+          <ServicesIcon className="size-7" />
+          <span className="mt-1 text-[11px]">الخدمات</span>
         </Button>
         <Button variant="nav" size="nav" onClick={goToTransfer}>
           <TransferIcon className="size-7" />
           <span className="mt-1 text-[11px]">تحويل أموال</span>
         </Button>
-        <Button variant="nav" size="nav">
-          <ServicesIcon className="size-7" />
-          <span className="mt-1 text-[11px]">الخدمات</span>
+        <Button variant="nav" size="nav" className="bg-muted text-alert">
+          <img
+            src={vodafoneCashLogo.url}
+            alt="المحفظة"
+            width={90}
+            height={110}
+            className="h-6 w-auto object-contain"
+          />
+          <span className="mt-1 text-[11px] font-bold">المحفظة</span>
         </Button>
       </nav>
     </main>
