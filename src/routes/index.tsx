@@ -269,7 +269,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="relative -mt-[8px] flex-1 overflow-y-auto rounded-t-[22px] bg-background px-[11px] pt-[8px] pb-4">
+      <section className="relative -mt-[8px] rounded-t-[22px] bg-background px-[11px] pt-[8px] pb-4">
         <div className="rounded-[12px] bg-panel px-3 py-2">
           <div className="mb-1.5 flex items-center justify-between">
             <h1 className="text-[16px] font-extrabold">خدمات كاش</h1>
