@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { Bell, ChevronLeft, Delete, Eye, EyeOff, Gift, Smartphone, X } from "lucide-react";
+import { Bell, ChevronLeft, Delete, Eye, EyeOff, Gift, Send, Smartphone, X } from "lucide-react";
 import { type SVGProps, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -175,9 +175,9 @@ function Index() {
   return (
     <main
       dir="rtl"
-      className="mx-auto h-dvh max-w-[430px] overflow-hidden bg-background pb-[66px] text-foreground shadow-2xl"
+      className="mx-auto flex h-dvh max-w-[430px] flex-col overflow-hidden bg-background pb-[66px] text-foreground shadow-2xl"
     >
-      <section className="wallet-backdrop relative h-[310px] px-[22px] pt-[12px] text-primary-foreground">
+      <section className="wallet-backdrop relative h-[310px] shrink-0 px-[22px] pt-[12px] text-primary-foreground">
         <div className="flex items-center justify-between">
           <div className="flex h-[40px] items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 text-[17px] font-bold">
             <ChevronLeft size={27} strokeWidth={3} />
@@ -269,7 +269,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="relative -mt-[8px] rounded-t-[22px] bg-background px-[11px] pt-[8px]">
+      <section className="relative -mt-[8px] flex-1 overflow-y-auto rounded-t-[22px] bg-background px-[11px] pt-[8px] pb-4">
         <div className="rounded-[12px] bg-panel px-3 py-2">
           <div className="mb-1.5 flex items-center justify-between">
             <h1 className="text-[16px] font-extrabold">خدمات كاش</h1>
@@ -314,6 +314,56 @@ function Index() {
             height={512}
             className="h-[170px] w-full rounded-[10px] object-cover"
           />
+        </div>
+
+        <div className="mt-[7px] grid grid-cols-2 gap-2" dir="rtl">
+          <div className="relative h-[210px] overflow-hidden rounded-[16px] bg-panel p-3">
+            <h2 className="text-[16px] font-extrabold">مصروفاتك</h2>
+            <svg
+              viewBox="0 0 200 150"
+              preserveAspectRatio="none"
+              className="absolute inset-x-0 bottom-0 h-[150px] w-full"
+              aria-hidden="true"
+            >
+              <g stroke="currentColor" className="text-foreground/10" strokeWidth="1">
+                <line x1="0" y1="20" x2="200" y2="20" />
+                <line x1="0" y1="50" x2="200" y2="50" />
+                <line x1="0" y1="80" x2="200" y2="80" />
+                <line x1="0" y1="110" x2="200" y2="110" />
+                <line x1="40" y1="0" x2="40" y2="150" />
+                <line x1="80" y1="0" x2="80" y2="150" />
+                <line x1="120" y1="0" x2="120" y2="150" />
+                <line x1="160" y1="0" x2="160" y2="150" />
+              </g>
+              <defs>
+                <linearGradient id="expenseFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#4e8589" />
+                  <stop offset="100%" stopColor="#4e8589" stopOpacity="0.15" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M0 150 L0 120 C30 122 45 100 70 92 C95 84 105 60 130 52 C155 44 170 20 200 6 L200 150 Z"
+                fill="url(#expenseFill)"
+              />
+            </svg>
+            <p className="absolute bottom-2 right-3 text-[15px]">
+              جنيه <strong className="text-[22px] font-extrabold">٧٣١٤٫٧٠</strong>
+            </p>
+          </div>
+
+          <button
+            type="button"
+            onClick={goToTransfer}
+            className="flex h-[210px] flex-col items-center rounded-[16px] bg-panel p-3 text-center"
+          >
+            <h2 className="self-start text-[16px] font-extrabold">تحويل اموال</h2>
+            <span className="mt-5 grid size-[52px] place-items-center rounded-full bg-alert/10">
+              <Send className="size-6 -rotate-12 text-alert" />
+            </span>
+            <p className="mt-5 text-[13px] leading-[1.5] text-foreground/80">
+              ستظهر المفضلات الخاصة بك هنا. اضغط لإدارتها
+            </p>
+          </button>
         </div>
       </section>
 
