@@ -93,12 +93,12 @@ function ConfirmPage() {
         {/* Fees card */}
         <div className="mt-3 rounded-[18px] bg-white px-4">
           <div className="flex items-center justify-between py-2.5">
-            <span className="text-[17px]">الرسوم</span>
-            <span className="text-[17px] font-bold">0.0 جنيه</span>
+            <span className="text-[15px]">الرسوم</span>
+            <span className="text-[15px] font-bold">0.0 جنيه</span>
           </div>
           <div className="flex items-center justify-between pb-2.5">
-            <span className="text-[17px]">المبلغ الكلي المستحق</span>
-            <span className="text-[17px] font-bold">{total} جنيه</span>
+            <span className="text-[15px]">المبلغ الكلي المستحق</span>
+            <span className="text-[15px] font-bold">{total} جنيه</span>
           </div>
         </div>
 
@@ -117,7 +117,7 @@ function ConfirmPage() {
                 className={`absolute top-[3px] size-[24px] rounded-full bg-white shadow transition-all ${greeting ? "left-[25px]" : "left-[3px]"}`}
               />
             </button>
-            <span className="text-[16px]">اضف كارت معايدة؟</span>
+            <span className="text-[15px]">اضف كارت معايدة؟</span>
           </div>
           <img
             src="/images/greeting-stamps.png"
@@ -128,8 +128,8 @@ function ConfirmPage() {
           />
         </div>
 
-        <p className="mt-2 text-[13px] text-foreground/45">* لمستخدمين فودافون كاش فقط</p>
-        <p className="mt-1 text-[13px] leading-relaxed text-foreground/70">
+        <p className="mt-2 text-[12px] text-foreground/45">* لمستخدمين فودافون كاش فقط</p>
+        <p className="mt-1 text-[12px] leading-relaxed text-foreground/70">
           تأكد من ادخال الرقم الصحيح وفي حالة التحويل الخاطئ لن تتمكن من اعادة المبلغ مرة اخرى.
         </p>
         <div className="flex-1" />
@@ -139,7 +139,7 @@ function ConfirmPage() {
       <div className="shrink-0 px-5 pb-3 pt-2">
         <button
           type="button"
-          className="h-[52px] w-full rounded-[14px] bg-[#e60000] text-[18px] font-normal text-white transition-transform active:scale-[0.98]"
+          className="h-[52px] w-full rounded-[14px] bg-[#e60000] text-[16px] font-normal text-white transition-transform active:scale-[0.98]"
         >
           تأكيد
         </button>
