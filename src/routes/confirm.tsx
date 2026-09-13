@@ -46,7 +46,7 @@ function ConfirmPage() {
 
       <div className="flex min-h-0 flex-1 flex-col px-4">
         {/* Amount */}
-        <div className="mt-[17px] flex items-baseline justify-center gap-2">
+        <div className="mt-[27px] flex items-baseline justify-center gap-2">
           <span className="text-[40px] font-bold leading-none text-[#2e8b9a]">{amount}</span>
           <span className="text-[28px] font-bold leading-none">جنيه</span>
         </div>
